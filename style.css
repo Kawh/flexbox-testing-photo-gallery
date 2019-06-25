@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  /* Using a gradient generator in order to set a gradient as the background */
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #909ae2,
+    #8499e3,
+    #7899e3,
+    #6f8edf,
+    #6782db,
+    #6076d6,
+    #5b6ad1
+  );
+  /* Setting the font here for the body, as text might be added in the future */
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    /* Experimenting with flex and related options */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Adding padding around the contents of the container */
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 4em;
+  border-bottom: 2px solid black;
+  text-align: center;
+  box-shadow: 4px 4px 5px #ffffff;
+  margin: 0px;
+  padding-bottom: 10px;
+
+}
+
+img {
+    /* Setting width and height of the images, in order to fix size issues */
+  width: 450px;
+  height: 600px;
+  margin: 10px;
+  /* Adding a transition so the hover isn't instant for the user */
+  /* Adding the prefixes for a browser, so that there are no compatiblity issues */
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  padding: 2%;
+
+}
+
+img:hover {
+    /* Scaling up the image when it's hovered over */
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
